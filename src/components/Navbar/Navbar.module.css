@@ -1,0 +1,9 @@
+.navbarContainer {
+  width: 100vw;
+  height: 8vh;
+  background-color: #1363df;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
