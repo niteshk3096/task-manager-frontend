@@ -26,16 +26,16 @@ const Navbar = () => {
     }
   };
   return (
-    <>
+    <header>
       {userData !== null ? (
-        <div className={styles.navbarContainer}>
+        <nav className={styles.navbarContainer}>
           <p>Hi {user.name}</p>
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/profile">Profile</NavLink>
           <button onClick={userLogout}>Logout</button>
-        </div>
+        </nav>
       ) : null}
-    </>
+    </header>
   );
 };
 

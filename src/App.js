@@ -2,6 +2,7 @@ import { AuthProvider } from "./router/AuthProvider";
 import Router from "./router/Router";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MainContainer from "./components/MainContainer/MainContainer";
 function App() {
   return (
     <>
@@ -17,7 +18,9 @@ function App() {
         pauseOnHover
       />
       <AuthProvider>
-        <Router />
+        <MainContainer>
+          <Router />
+        </MainContainer>
       </AuthProvider>
     </>
   );

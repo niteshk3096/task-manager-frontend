@@ -12,6 +12,7 @@ import NotFound from "../components/NotFoundPage/NotFound";
 import { useAuth } from "./AuthProvider";
 function Router() {
   const { isLoading } = useAuth();
+  console.log("loading", isLoading);
   return (
     <>
       {isLoading ? <Loader /> : null}
